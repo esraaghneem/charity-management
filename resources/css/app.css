@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+body {
+    direction: {{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }};
+    text-align: {{ app()->getLocale() == 'ar' ? 'right' : 'left' }};
+}
+
